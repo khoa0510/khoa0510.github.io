@@ -21,9 +21,9 @@ export default function App() {
         // One-Page Mode: Render all components together
         <>
           <Hero />
+          <Education />
           <Skills />
           <Experience />
-          <Education />
           <Projects />
           <Contact />
         </>
