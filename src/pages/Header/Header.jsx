@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   FaHome,
   FaLaptopCode,
-  FaUser,
   FaBriefcase,
   FaGraduationCap,
   FaCode,
@@ -11,20 +10,19 @@ import {
 } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
-export default function Header() {
+export default function Header({isOnePage}) {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(() => {
     const path = location.pathname.substring(1) || "home";
     return path;
   });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const jumpToReleventDiv = (id) => {
+    const releventDiv = document.getElementById(id);
+    // behavior: "smooth" parameter for smooth movement
+    releventDiv.scrollIntoView({behavior: "smooth"});
+  }
 
   const navLinks = [
     { id: "home", icon: FaHome, text: "Home", path: "/" },
@@ -67,19 +65,15 @@ export default function Header() {
                 {navLinks.map(({ id, icon: Icon, text, path }) => (
                   <Link
                     key={id}
-                    to={path}
+                    to={path + (isOnePage ? `#${id}` : "")}
                     onClick={() => {
                       setActiveLink(id);
                       setIsMenuOpen(false);
+                      jumpToReleventDiv(id);
                     }}
                     className={`px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
                       transition-all duration-300 flex items-center gap-2
-                      hover:bg-white/10 
-                      ${
-                        activeLink === id
-                          ? "bg-white/15 text-white"
-                          : "text-gray-300 hover:text-white"
-                      }
+                      hover:bg-white/10  text-gray-300 hover:text-white
                     `}
                   >
                     <Icon

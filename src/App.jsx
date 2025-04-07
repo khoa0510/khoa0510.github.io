@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./assets/css/index.css";
 import Experience from "./pages/Experience/Experience";
 import Contact from "./pages/Contact/Contact";
@@ -11,11 +11,11 @@ import Education from "./pages/Education/Education";
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
-  const [isOnePage, setIsOnePage] = useState(false); // Toggle state
+  const [isOnePage,] = useState(true); // Toggle state
 
   return (
     <>
-      <Header />
+      <Header isOnePage={isOnePage} />
       {/* Conditional Rendering */}
       {isOnePage ? (
         // One-Page Mode: Render all components together
@@ -24,6 +24,7 @@ export default function App() {
           <Skills />
           <Experience />
           <Education />
+          <Projects />
           <Contact />
         </>
       ) : (
