@@ -93,6 +93,11 @@ export default function Contact() {
     >
       <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
+          <div className="relative">
+            <h2 className="text-5xl md:text-7xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center mb-12">
+              Contact Me
+            </h2>
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Contact Info */}
             <div className="space-y-8">

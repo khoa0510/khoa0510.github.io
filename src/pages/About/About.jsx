@@ -19,6 +19,9 @@ export default function About() {
             </div>
 
             <div className="relative space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-16">
+                About me
+              </h2>
               <p className="text-white">
                 Hello! I&#39;m Nguyen Huy Khoa, a Software Engineer with experience in developing and maintaining enterprise
                 Java applications (Spring, Struts, Oracle) and building full-stack web solutions using React, Node.js

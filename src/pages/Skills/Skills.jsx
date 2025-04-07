@@ -151,6 +151,10 @@ const SkillsSection = () => {
         <div className="flex justify-center items-center ">
           <IconCloudDemo/>
         </div>
+        <h2
+          className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-16 text-center">
+          Skills
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <SkillCard

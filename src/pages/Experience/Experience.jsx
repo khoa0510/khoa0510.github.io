@@ -1,5 +1,4 @@
-import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Code2, Layers, } from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -29,7 +28,7 @@ const ExperienceCard = ({
         </h3>
         <div className="flex justify-between items-center text-gray-300">
           <span className="font-semibold text-blue-400">{company}</span>
-          <span className="text-sm font-mono bg-blue-500/10 px-3 py-1 rounded-full">
+          <span className="text-sm font-mono bg-blue-500/10 px-3 py-1 rounded-full text-nowrap">
             {period}
           </span>
         </div>
@@ -54,34 +53,26 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
-      icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
+      icon: Code2,
+      title: "Software Engineer",
+      company: "Viettel Business Solutions, Viettel Group",
+      period: "Nov 2023 - Present",
       description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
+        "Developed, maintained and optimized enterprise Java applications (Spring, Struts, JSP, Oracle).",
     },
     {
       icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
-      period: "2021 - 2023",
+      title: "Freelance Web Developer",
+      company: "Upwork",
+      period: "April 2023 – Present",
       description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
-    },
-    {
-      icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
-      period: "2023 - Present",
-      description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Worked on developing and customizing Typescript websites for clients globally.",
     },
   ];
 
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-b relative overflow-hidden pt-32 pb-20">
+      <div id="experience" className="bg-gradient-to-b relative overflow-hidden pt-32 pb-20">
         {/* Animated gradient background */}
         <div className="absolute inset-0 bg-[#04081A]" />
 
@@ -109,17 +100,17 @@ const ExperienceSection = () => {
           <div className="flex flex-col items-center space-y-8 mb-20">
             <div className="relative">
               <h2 className="text-5xl md:text-7xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center">
-                Professional Journey
+                Experience
               </h2>
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
             </div>
             <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
-              "Transforming ideas into digital reality, one project at a time"
+              &#34;Transforming ideas into digital reality&#34;
             </p>
           </div>
 
           {/* Experience grid with improved layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
             {experiences.map((exp, index) => (
               <ExperienceCard key={index} {...exp} />
             ))}
