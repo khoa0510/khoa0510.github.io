@@ -222,3 +222,8 @@ pre[class*="language-"] {
   background-color: white;
   opacity: 0.8; /* Make it more visible */
 }
+
+pre[class*="language-" ],
+code[class*="language-"] {
+  white-space: pre-wrap !important;
+}

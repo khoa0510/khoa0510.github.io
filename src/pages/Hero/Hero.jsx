@@ -157,7 +157,7 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  Optimize lover 🚀 | Careful Developer 🔧 | Seeking ways to improve UX and DX for a better future 💻✨
+                  Optimizing lover 🚀 | Careful Developer 🔧 | Loving to find ways to improve UX and DX 💻✨
                 </p>
               </div>
 
@@ -194,7 +194,7 @@ const profile = {
               {/* Floating badges */}
               <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
                 <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
-                  <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UX Design
+                  <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Optimize
                 </div>
               </div>
               <div className="hidden lg:block absolute right-10 top-20 animate-float">
