@@ -29,7 +29,7 @@ export default function About() {
               </p>
               <p className="text-white">
                 My short-term goal is to make websites faster, more stable, and more beautiful.
-                Currently, I&#39;m focus on Database Optimization because this is the best way
+                Currently, I&#39;m focusing on Database Optimization because this is the best way
                 to improve application performance. In the future, I&#39;ll be diving into system design
                 and architecture to build scalable and maintainable systems.
               </p>

@@ -6,11 +6,9 @@ import {
   FaGraduationCap,
   FaCode,
   FaEnvelope,
-  FaBars, FaLinkedin,
+  FaBars,
 } from "react-icons/fa";
 import {Link, useLocation} from "react-router-dom";
-import {FaGithub, FaPhone} from "react-icons/fa6";
-import {Phone} from "lucide-react";
 
 export default function Header({isOnePage}) {
   const location = useLocation();
