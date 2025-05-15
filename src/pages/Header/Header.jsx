@@ -67,7 +67,7 @@ export default function Header({isOnePage}) {
                 {navLinks.map(({id, icon: Icon, text, path}) => (
                   <Link
                     key={id}
-                    to={path + (isOnePage ? `#${id}` : "")}
+                    to={isOnePage ? `#${id}` : path}
                     onClick={() => {
                       setActiveLink(id);
                       setIsMenuOpen(false);

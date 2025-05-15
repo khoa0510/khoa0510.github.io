@@ -39,7 +39,7 @@ function Card({
       className="flex items-center justify-center"
     >
       <div
-        className="relative -top-[25%] h-auto w-[90%] md:w-[85%] lg:w-[75%] xl:w-[65%] max-w-2xl origin-top bg-slate-950"
+        className="relative -top-[25%] h-auto md:max-w-4xl max-w-2xl origin-top bg-slate-950"
       >
         <CodeWindow title={title}>{description}</CodeWindow>
       </div>
